@@ -1,0 +1,47 @@
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0px;
+  gap: 5px;
+  padding: 5px;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: "topo topo topo"
+                       "conteudo conteudo menu"
+                       "rodape rodape rodape";
+}
+
+#topo {
+  grid-area: topo;
+  border: 5px solid purple;
+  color: purple;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#conteudo {
+  grid-area: conteudo;
+  border: 5px solid green;
+  color: green;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#menu {
+  grid-area: menu;
+  border: 5px solid blue;
+  color: blue;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#rodape {
+  grid-area: rodape;
+  border: 5px solid yellow;
+  color: yellow;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
